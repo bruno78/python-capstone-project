@@ -103,7 +103,9 @@ The last part of the process involves creating graphs and reporting the results.
 
 ### Data files
 
-See codebook for more details
+See [codebook](https://github.com/bruno78/python-capstone-project/blob/master/codebook.md) for more details
+
+*Note:* To see the version control process ask me to see the bitbucket account. There are files such as GSS data set that is not available for public display. 
 
 ### Sources
 
