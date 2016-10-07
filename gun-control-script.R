@@ -20,7 +20,7 @@ year = mass$Year
 massshootings = mass$MassShootings
 ggplot(mass, aes(x = year, y = massshootings, group=1)) + geom_line(aes(group=1))
 
-############################## Mass Shootings vs Gun laws ##########################################
+############################## Mass Shootings vs Gun Control laws ##########################################
 
 glms<- read.csv2("gunlaws_mass_shootings.csv", sep = ",")
 
@@ -38,9 +38,9 @@ axis(2, ylim=c(0,max(mass)),col="red",lwd=2)
 mtext(2,text="No of Mass Shootings",line=2.5)
 
 par(new=T)
-plot(year, yfavor, axes=F, xlab="", ylab="", 
+plot(year, yfavor, axes=F, xlab="", ylab="",
      type="l",col='blue', main="",lwd=2)
-axis(4, at=pretty(yfavor), paste0(pretty(yfavor) * 100, " %"), 
+axis(4, at=pretty(yfavor), paste0(pretty(yfavor) * 100, " %"),
      ylim=c(0,max(yfavor)), col="blue", lwd=2)
 mtext(4,text="Favor", line=2)
 
@@ -63,7 +63,7 @@ library(plotrix)
 ### Race
 race <- mjdf$Race
 levels(race)
-levels(race) <- c("Asian", "Black", "Black", "Latino", "Native American", "Other & Unclear", 
+levels(race) <- c("Asian", "Black", "Black", "Latino", "Native American", "Other & Unclear",
                   "Other & Unclear", "White", "White", "White" )
 #### Plotting race
 counts <- table(race)
@@ -76,8 +76,8 @@ pos[4] <- 4.8
 pie3D(counts, labels=lbls, explode=0.1, main="Race", labelpos = pos)
 
 prop.table(summary(race))
-# Asian           Black          Latino Native American Other & Unclear           White 
-# 0.07228916      0.16867470      0.07228916      0.03614458      0.07228916      0.57831325 
+# Asian           Black          Latino Native American Other & Unclear           White
+# 0.07228916      0.16867470      0.07228916      0.03614458      0.07228916      0.57831325
 
 ### bought legally vs illegally
 gun.purchase <- mjdf$Weapons.obtained.legally
@@ -85,8 +85,8 @@ levels(gun.purchase)
 levels(gun.purchase) <- c("Yes", "No", "Unknown", "Yes", "Yes", "Yes")
 
 prop.table(summary(gun.purchase))
-# Yes         No    Unknown 
-# 0.79518072 0.14457831 0.06024096 
+# Yes         No    Unknown
+# 0.79518072 0.14457831 0.06024096
 
 
 ### prior mental health issues
@@ -95,13 +95,13 @@ levels(mental)
 levels(mental) <- c("No", "Unclear", "Unclear", "Unknown", "Unknown", "Yes")
 
 prop.table(summary(mental))
-# No    Unclear    Unknown        Yes 
-# 0.20481928 0.21686747 0.02409639 0.55421687 
+# No    Unclear    Unknown        Yes
+# 0.20481928 0.21686747 0.02409639 0.55421687
 
 ### Ploting
 ggplot(mjdf, aes(x = mjyear, y = victims, group=1)) + geom_line(aes(group=1))
 
-### total of gun shootings per year vs vicitms 
+### total of gun shootings per year vs vicitms
 table(xtabs(victims ~ mjyear, data = mjdf))
 massfreq <- count(mjdf, "Year")
 agmj <- aggregate(victims ~ mjyear, data=mjdf, FUN=sum)
@@ -109,7 +109,7 @@ agmj ['MassShootings'] <- massfreq$freq
 colnames(agmj)[1] <- 'Year'
 View(agmj)
 
-#### Plotting Mass Shootings vs Amount of Victims 
+#### Plotting Mass Shootings vs Amount of Victims
 
 mjmass <- agmj$MassShootings
 mjvict <- agmj$victims
@@ -123,7 +123,7 @@ mtext(2,text="No of Mass Shootings",line=2.5)
 
 par(new=T)
 plot(mjyear, mjvict, axes=F, xlab="", ylab="",col='dark grey', type="l", lty=3, main="",lwd=2)
-axis(4, at=pretty(mjvict),  ylim=c(0,max(mjvict)), 
+axis(4, at=pretty(mjvict),  ylim=c(0,max(mjvict)),
      ylim=c(0,max(mjvict)), col="dark grey", lwd=2)
 mtext(4,text="No of Victims", line=2)
 
@@ -141,4 +141,3 @@ cor(mass, yfavor)
 ran <- glms[glms$Year > 1988 & glms$Year < 2012,]
 rfavor <-as.numeric(as.character( ran$GunLaw.Favor ))
 cor(ran$MassShootings, rfavor)
-

@@ -46,7 +46,8 @@ tdgunlaw.csv consists data from GSS7214_R6a.sav
 
 ### Variables
 
-#### tdgunlaw.csv
+
+#### TDGUNLAW.CSV
 
 **year** - respective year of the survey
 
@@ -62,7 +63,8 @@ tdgunlaw.csv consists data from GSS7214_R6a.sav
 
 **gunlaw** - favor or oppose gun permits
 
-#### gunlaw_opinion.csv
+
+#### GUNLAW_OPINION.CSV
 
 **Year** - respective year of the survey
 
@@ -78,7 +80,8 @@ tdgunlaw.csv consists data from GSS7214_R6a.sav
 
 **GLOAvgAge** - average age of respondents who answered 'OPPOSE' per year
 
-#### gunlaws_mass_shootings.csv
+
+#### GUNLAWS_MASS_SHOOTINGS.CSV
 
 **Year** - year
 
@@ -96,7 +99,8 @@ tdgunlaw.csv consists data from GSS7214_R6a.sav
 
 **MassShootings** - total of mass shootings registered per year
 
-#### age_frequency.csv
+
+#### AGE_FREQUENCY.CSV
 
 **Year** - respective year of the survey
 
@@ -106,7 +110,8 @@ tdgunlaw.csv consists data from GSS7214_R6a.sav
 
 **OpposeAgeFrequency** - age frequency of the respondents who answered 'FAVOR' per year
 
-#### mass_shootings_per_year.csv
+
+#### MASS_SHOOTINGS_PER_YEAR.CSV
 
 **Year** - respective year of mass shootings
 

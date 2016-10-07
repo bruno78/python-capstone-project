@@ -41,8 +41,10 @@ The final result of this project was presented in a blog post available for read
 13. twodatasets.py - A script to combine gunlaw_opinion and mass_shootings_per_year data sets
 14. gunlaws_mass_shootings.csv - Data set containing gun law opinions and mass shootings per year
 15. graph.html - html file containing a line graph for data visualization
-16. README.md - read me file in markdown format explaining the process
-17. codebook.md - codebook in markdown format containing information about the scripts and different data variables
+16. gun-control-script.R - R script plotting comparative graphs Mass Shootings vs Gun Control, Plotting Mass Shootings vs Amount of Victims laws, and correlation calculations on Gun Control laws vs Mass Shootings
+17. mass_shootings-vs-gunlaws.svg - graph in svg format 
+18. README.md - read me file in markdown format explaining the process
+19. codebook.md - codebook in markdown format containing information about the scripts and different data variables
 
 ### Process
 
@@ -105,7 +107,7 @@ The last part of the process involves creating graphs and reporting the results.
 
 See [codebook](https://github.com/bruno78/python-capstone-project/blob/master/codebook.md) for more details
 
-*Note:* To see the version control process ask me to see the bitbucket account. There are files such as GSS data set that is not available for public display. 
+*Note:* To see the version control process ask me to see the bitbucket account. There are files such as GSS data set that is not available for public display.
 
 ### Sources
 
