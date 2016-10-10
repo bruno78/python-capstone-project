@@ -1,5 +1,5 @@
 # Capstone: Retrieving, Processing, and Visualizing Data with Python
-## "American's Views on Gun Permits" project
+## "America's Views on Gun Permits" project
 
 ### Introduction
 
@@ -42,7 +42,7 @@ The final result of this project was presented in a blog post available for read
 14. gunlaws_mass_shootings.csv - Data set containing gun law opinions and mass shootings per year
 15. graph.html - html file containing a line graph for data visualization
 16. gun-control-script.R - R script plotting comparative graphs Mass Shootings vs Gun Control, Plotting Mass Shootings vs Amount of Victims laws, and correlation calculations on Gun Control laws vs Mass Shootings
-17. mass_shootings-vs-gunlaws.svg - graph in svg format 
+17. mass_shootings-vs-gunlaws.svg - graph in svg format
 18. README.md - read me file in markdown format explaining the process
 19. codebook.md - codebook in markdown format containing information about the scripts and different data variables
 
